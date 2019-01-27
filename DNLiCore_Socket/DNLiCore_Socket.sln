@@ -1,0 +1,49 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27703.2026
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DNLiCore_Socket", "DNLiCore_Socket\DNLiCore_Socket.csproj", "{4683B798-59B3-47F4-9455-E3C6CE36C8A4}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DNLiCore_Socket_TcpServer", "DNLiCore_Socket_TcpServer\DNLiCore_Socket_TcpServer.csproj", "{5FDC6D8C-F51F-4317-812C-C21829C52B22}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DNLiCore_Socket_UdpServer", "DNLiCore_Socket_UdpServer\DNLiCore_Socket_UdpServer.csproj", "{6F45CDE7-6C77-4C24-AEE2-6529D650313F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DNLiCore_Socket_TcpClient", "DNLiCore_Socket_TcpClient\DNLiCore_Socket_TcpClient.csproj", "{B68D249A-CA60-413A-9058-409D03973A60}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DNLiCore_Socket_UdpClient", "DNLiCore_Socket_UdpClient\DNLiCore_Socket_UdpClient.csproj", "{216A47F4-ED25-481C-A715-0BA4D90FD77E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4683B798-59B3-47F4-9455-E3C6CE36C8A4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4683B798-59B3-47F4-9455-E3C6CE36C8A4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4683B798-59B3-47F4-9455-E3C6CE36C8A4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4683B798-59B3-47F4-9455-E3C6CE36C8A4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5FDC6D8C-F51F-4317-812C-C21829C52B22}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5FDC6D8C-F51F-4317-812C-C21829C52B22}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5FDC6D8C-F51F-4317-812C-C21829C52B22}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5FDC6D8C-F51F-4317-812C-C21829C52B22}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6F45CDE7-6C77-4C24-AEE2-6529D650313F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6F45CDE7-6C77-4C24-AEE2-6529D650313F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6F45CDE7-6C77-4C24-AEE2-6529D650313F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6F45CDE7-6C77-4C24-AEE2-6529D650313F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B68D249A-CA60-413A-9058-409D03973A60}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B68D249A-CA60-413A-9058-409D03973A60}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B68D249A-CA60-413A-9058-409D03973A60}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B68D249A-CA60-413A-9058-409D03973A60}.Release|Any CPU.Build.0 = Release|Any CPU
+		{216A47F4-ED25-481C-A715-0BA4D90FD77E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{216A47F4-ED25-481C-A715-0BA4D90FD77E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{216A47F4-ED25-481C-A715-0BA4D90FD77E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{216A47F4-ED25-481C-A715-0BA4D90FD77E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {36CA1B2A-5023-4447-B31F-3A41F194803B}
+	EndGlobalSection
+EndGlobal
