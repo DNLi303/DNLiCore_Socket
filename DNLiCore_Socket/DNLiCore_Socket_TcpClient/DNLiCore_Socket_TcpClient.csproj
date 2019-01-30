@@ -6,6 +6,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="DNLiCore_Utility" Version="1.1.1" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\DNLiCore_Socket\DNLiCore_Socket.csproj" />
   </ItemGroup>
 
