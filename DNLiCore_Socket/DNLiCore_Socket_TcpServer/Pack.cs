@@ -11,7 +11,7 @@ namespace DNLiCore_Socket_TcpServer
 
         public Pack()
         {
-            TcpPackServer = new DNLiCore_Socket.Server.TcpPushServer(1000, 4028, 30);
+            TcpPackServer = new DNLiCore_Socket.Server.TcpPushServer(1000, 4028, 20);
             TcpPackServer.OnAccept += TcpPackServer_OnAccept;  //连接成功事件
             TcpPackServer.OnClose += TcpPackServer_OnClose; //设备断开事件
             TcpPackServer.OnReceive += TcpPackServer_OnReceive; //接收到数据事件

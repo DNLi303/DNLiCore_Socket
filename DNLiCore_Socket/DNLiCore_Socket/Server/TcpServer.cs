@@ -210,10 +210,11 @@ namespace DNLiCore_Socket.Server
         /// </summary>
         private void Heartbeat()
         {
+            
             //计算超时次数 ，超过count就当客户端断开连接。服务端清除该连接资源
             int count = overtime / overtimecheck;
             while (true)
-            {
+            {                
                 foreach (var item in connectClient.Values)
                 {
                     if (item.keep_alive >= count)
@@ -498,6 +499,7 @@ namespace DNLiCore_Socket.Server
                 }
                 if (client.socket.Connected == false)
                 {
+                    OnClose(connectId);
                     connectClient.TryRemove(connectId, out client);
                     clientList.TryRemove(connectId, out clientip);
                     return;
