@@ -8,7 +8,7 @@ namespace DNLiCore_Socket_TcpServer
         {
             Console.WriteLine("Hello World!");
             Pack pack = new Pack();
-            Console.WriteLine("Tcp服务端已准备好!");
+            Console.WriteLine("Tcp服务端已准备好,端口8889!");
             Console.Read();
         }
     }

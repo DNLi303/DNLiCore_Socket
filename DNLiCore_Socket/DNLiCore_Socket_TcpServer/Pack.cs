@@ -11,12 +11,13 @@ namespace DNLiCore_Socket_TcpServer
 
         public Pack()
         {
-            TcpPackServer = new DNLiCore_Socket.Server.TcpPushServer(1000, 4028, 20);
+            TcpPackServer = new DNLiCore_Socket.Server.TcpPushServer(1000, 4028, 200,4);
             TcpPackServer.OnAccept += TcpPackServer_OnAccept;  //连接成功事件
             TcpPackServer.OnClose += TcpPackServer_OnClose; //设备断开事件
             TcpPackServer.OnReceive += TcpPackServer_OnReceive; //接收到数据事件
             TcpPackServer.OnSend += TcpPackServer_OnSend;  //发送消息回调事件
-            TcpPackServer.Start(8888);
+            
+            TcpPackServer.Start(8889);
         }
 
         private void TcpPackServer_OnSend(int arg1, int arg2)
@@ -27,8 +28,10 @@ namespace DNLiCore_Socket_TcpServer
 
         private void TcpPackServer_OnReceive(int arg1, byte[] arg2)
         {
-            DNLiCore_Utility.Log.FileTxtLogs.WriteLog("【接收消息】【设备ID：" + arg1 + "】【消息内容:"+System.Text.Encoding.UTF8.GetString(arg2)+"】");
-            TcpPackServer.Send(arg1, arg2, 0, arg2.Length);
+            string clientDataString = Encoding.UTF8.GetString(arg2);
+            Console.WriteLine(clientDataString);
+           // DNLiCore_Utility.Log.FileTxtLogs.WriteLog("【接收消息】【设备ID：" + arg1 + "】【消息内容:"+System.Text.Encoding.UTF8.GetString(arg2)+"】");
+            //TcpPackServer.Send(arg1, arg2, 0, arg2.Length);
         }
 
         private void TcpPackServer_OnClose(int obj)

@@ -26,5 +26,6 @@ namespace DNLiCore_Socket.Common
         /// 附加数据
         /// </summary>
         public object attached { get; set; }
+        
     }
 }
